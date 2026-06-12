@@ -1,0 +1,63 @@
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/* Custom Teal Submit Button Overrides */
+input[type="submit"], button[type="submit"]:not(.wp-block-search__button), .wp-element-button:not(.wp-block-search__button) {
+    background-color: var(--purple) !important;
+    border-color: var(--purple) !important;
+    color: var(--white) !important;
+}
+.wp-block-search__button {
+    background-color: transparent !important;
+}
+.newsletter-footer input[type="submit"], 
+.site-footer .newsletter form .wpcf7-submit, 
+.get-more-section .newsletter form .wpcf7-submit {
+    background-color: transparent !important;
+    border-color: var(--white) !important;
+    color: var(--white) !important;
+}
+.newsletter-footer input[type="submit"]:hover, 
+.site-footer .newsletter form .wpcf7-submit:hover, 
+.get-more-section .newsletter form .wpcf7-submit:hover {
+    background-color: var(--white) !important;
+    color: var(--purple) !important;
+}
+
+/* New Layout Color Scheme Overrides */
+:root {
+    --purple: #6C63FF !important;
+    --dark-grey: #1E2235 !important;
+    --white: #FFFFFF !important;
+}
+
+/* Header/Navbar Overrides */
+.fixed-nav {
+    background-color: var(--dark-grey) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.fixed-nav .top-header a, 
+.fixed-nav .rhs a, 
+#purple-fixed-menu li a, 
+#ceiling-menu li a, 
+#login-menu li a, 
+.fixed-nav #search-toggle {
+    color: var(--white) !important;
+}
+.header-logo img {
+    filter: invert(1) saturate(0) brightness(200%) !important;
+}
+
+/* Footer Overrides */
+.footer-navigation {
+    background-color: var(--dark-grey) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Hero Section Overrides */
+.newsletter-section {
+    background-color: var(--white) !important;
+    border: 1px solid #ebebeb !important;
+}
+input[type="email"], input[type="text"], .newsletter-section form input[type=email] {
+    background-color: var(--white) !important;
+    border: 1px solid #ccc !important;
+}

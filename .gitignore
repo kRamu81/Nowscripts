@@ -1,0 +1,11 @@
+# HTTrack cache and logs
+hts-cache/
+hts-log.txt
+cookies.txt
+
+# OS metadata
+Thumbs.db
+EHthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
