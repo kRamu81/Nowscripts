@@ -34,7 +34,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Points to the directory containing the static files
-          path: './nowscripts.com'
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
